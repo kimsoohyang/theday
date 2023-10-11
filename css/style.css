@@ -473,15 +473,19 @@ z-index: 99;
     margin: auto;
     width: 1320px;
     position: absolute;
+    left: 50%;
+    top: 290px;
+    transform: translateX(-50%);
+    /* position: absolute;
     top: 300px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 .con4_box1, .con4_box2, .con4_box3{
-    width: 33.34%;
+    width: 33%;
     height: 509px;
-    padding: 20px 0;
+    padding: 30px 0;
     box-sizing: border-box;
 }
 
