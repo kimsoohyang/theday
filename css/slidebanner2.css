@@ -6,6 +6,7 @@
 	position: relative;
 	overflow: hidden;
 	margin: auto;
+	padding-top: 78px;
 }
 .slide2 .swiper-slide {
 	text-align: center; 
