@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #797979;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    line-height: 1;
+    min-width: 1320px;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    box-shadow: 0px 3px 15px rgba(185, 185, 185, 0.3);
+    position: relative;
+    z-index: 3;
+
+}
+
+.header_in {
+    width: 100%;
+    /* max-width: 1784px; */
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    left: 75px;
+}
+
+.icon {
+    position: absolute;
+    right: 85px;
+}
+
+.nav {
+    width: 530px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav>li {
+    flex: 1;
+}
+
+.nav>li>a {
+    font-weight: 700;
+    color: #585858;
+}
+
+.icon a {
+    display: inline-block;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.nav>li>a:hover {
+    color: #35a336;
+
+}
+
+
+/* 서브메뉴 */
+
+.sub {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    background-color: rgba(255, 255, 255, 0.397);
+    display: none;
+    z-index: 3;
+}
+
+.sub_in {
+    width: 530px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.sub_in ul {
+    flex: 1;
+    text-align: center;
+
+}
+
+.sub_in ul li a {
+    display: block;
+    margin: 10px 0;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.sub_in ul li a:hover {
+    color: #35a336;
+}
+
+/* 멤버십 */
+
+.section1 {
+    background: url(../sub7_images/bg.png) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 800;
+    padding: 80px 0 15px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #6e6e6e;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+.membership_wrap {
+    width: 1270px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    width: 365px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px 25px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px rgb(223, 233, 229);
+    position: relative;
+    margin-right: 58px;
+    margin-bottom: 70px;
+    transition: all 0.5s;
+}
+
+.box1:hover{
+    transform: translateY(-20px);
+}
+.box2:hover{
+    transform: translateY(-20px);
+}
+.box3:hover{
+    transform: translateY(-20px);
+}
+.box4:hover{
+    transform: translateY(-20px);
+}
+.box5:hover{
+    transform: translateY(-20px);
+}
+
+
+
+.text_wrap {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gray,
+.green,
+.red,
+.gold,
+.black {
+    width: 100px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 100px;
+    left: 30%;
+    top: -10%;
+    text-align: center;
+}
+
+.gray {
+    background-color: #979797;
+    position: absolute;
+}
+
+.green {
+    background-color: #49aa27;
+    position: absolute;
+}
+
+.red {
+    background-color: #c92424;
+    position: absolute;
+}
+
+.gold {
+    background-color: #eb9706;
+    position: absolute;
+}
+
+.black {
+    background-color: #000;
+    position: absolute;
+}
+
+.box1 h3,
+.box2 h3,
+.box3 h3,
+.box4 h3,
+.box5 h3 {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box1 h3 {
+    color: #979797;
+}
+
+.box2 h3 {
+    color: #49aa27;
+}
+
+.box3 h3 {
+    color: #c92424;
+}
+
+.box4 h3 {
+    color: #eb9706;
+}
+
+.box5 h3 {
+    color: #000;
+}
+
+
+.box1 p,
+.box2 p,
+.box3 p,
+.box4 p,
+.box5 p {
+    color: #5c5b5b;
+    line-height: 1.4;
+}
+
+.left {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.last_text{
+    text-align: center;
+    font-size: 16px;
+    color: #707070;
+    line-height: 1.6;
+}
+
+/* 베네핏 */
+
+.section2{
+    margin-bottom: 200px;
+}
+.section2 span{
+    color: #c92424;
+    font-weight: bold;
+}
+
+.benefit_wrap{
+    width: 1164px;
+    height: 729px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.con{
+    width: 388px;
+    height: 364px;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding-top: 85px;
+    box-sizing: border-box;
+    
+}
+
+.con img{
+    transition: all 1s;
+}
+
+.con:hover img{
+    transform: translateY(-20px);
+}
+
+.light{
+    background-color: #f9f9f9;
+}
+
+.con h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.con p{
+    font-size: 16px;
+    color: #505050;
+}
+
+.con img{
+    margin-bottom: 30px;
+}
+
+
+.con1{
+    padding-top: 105px;
+}
+
+
+/* 푸터 */
+
+
+footer{
+    width: 100%;
+    background-color: #309a52;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+
+.footer_in ul{
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+}
+
+.footer_in ul li a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer_in ul li a:hover{
+    color: #87daa3;
+}
+
+footer p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 30px;
+
+}
+
+/* 띠 */
+
+.marquee2{
+    background-color: #31aa58;
+    height: 34px;
+    padding: 20px 0 10px 0;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 150px; */
+}
+
+.marquee2 div{
+    width: 200%;
+    height: 34px;
+    background: url(../images/line_text.png) repeat-x;
+    position: absolute;
+    animation: marquee2 13s linear infinite;
+}
+@keyframes marquee2{
+    0%{right: 0;}
+    100%{right: -100%;}
+}
