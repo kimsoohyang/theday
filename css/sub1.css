@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    min-width: 1440px;
+    box-sizing: border-box;
+
+}
+
+
+/* 헤더 */
+header {
+    width: 100%;
+    background-color: #ffffffd3;
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+}
+
+.header_in {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    width: 733px;
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li a {
+    color: #9b9b9b;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.nav li a:hover {
+    color: #9fea3d;
+}
+
+/* 메뉴 호버 */
+
+/*  하이퍼링크 설정  */
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.nav {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav>li {
+    float: left;
+    width: 25%;
+}
+
+.nav>li>a {
+    display: block;
+    position: relative;
+}
+
+.solid {
+    width: 50%;
+    height: 100%;
+    background: #9fea3d;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.solid4 {
+    width: 80%;
+    left: 9%;
+}
+
+.nav>li>a:hover {
+    color: #ffffff;
+    /* font-weight: bold; */
+}
+
+.nav>li>a:hover .solid {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 헤더끝 */
+
+
+/* 타이틀 */
+.title {
+    width: 1320px;
+    height: 300px;
+    background: url(../sub1_images/title_bg.png)top center no-repeat;
+    margin: 150px auto 150px;
+    padding: 105px 100px 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.title h1 {
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.title p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.title img {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+
+/* 타이틀끝 */
+
+/* 더데이정보 */
+
+.infor_wrap{
+    overflow: hidden;
+}
+
+.infor {
+    width: 1320px;
+    margin: 0 auto 110px;
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor_right h1 {
+    font-size: 28px;
+    color: #484848;
+    margin-bottom: 10px;
+}
+
+.infor_right h3 {
+    font-size: 16px;
+    color: #5e5e5e;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.infor_right h2 {
+    font-size: 20px;
+    color: #474747;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: 800;
+}
+
+.infor_right p {
+    font-size: 16px;
+    color: #5f5f5f;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.infor_left{
+    width: 457px;
+    height: 592px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.infor_left img{
+    transition: all 1s;
+}
+
+.salad:hover{
+    transform: scale(1.2);
+}
+
+/* 더데이정보끝 */
+
+/* 소비자평가 */
+.consumer {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.consumer_in {
+    width: 1320px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.consumer_in h3 {
+    font-size: 24px;
+    color: #474747;
+}
+
+.consumer_in h1 {
+    font-size: 34px;
+    color: #474747;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+}
+
+.consumer_in h1 span {
+    font-weight: 800;
+}
+
+.con_wrap {
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.graph {
+    width: 775px;
+    height: 42px;
+    background: #e8e8e8;
+    border-radius: 50px;
+}
+
+.graph span {
+    display: block;
+    height: 42px;
+    text-align: right;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 13px 20px;
+    font-weight: bold;
+}
+
+.stack span {
+    animation: stack 2s 3;
+    background: #ffa600;
+}
+
+
+.stack3 span {
+    animation: stack3 2s 3;
+    background: #ffa600;
+}
+
+.stack4 span {
+    animation: stack4 2s 3;
+    background: #ffa600;
+}
+
+@keyframes stack {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes stack2 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes stack3 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes stack4 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.text {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+
+.text h2 {
+    font-size: 24px;
+    color: #464646;
+    margin-right: 40px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+}
+
+.text span {
+    margin-left: 40px;
+}
+
+.farm_box_wrap{
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    
+}
+
+.farm_box1{
+    width: 240px;
+    height: 133px;
+    overflow: hidden;
+    margin-right: 7px;
+}
+
+.farm_box1 img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/* 소비자평가끝 */
+
+/* 더데이팜 */
+.farm {
+    width: 100%;
+    height: 1201px;
+    background: url(../sub1_images/farm_bg.png) top center no-repeat;
+    margin: 150px 0;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+.farm h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.farm h1 {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.farm h1 span {
+    font-weight: 800;
+}
+
+.farm_in {
+    width: 1320px;
+    height: 631px;
+    margin: 75px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    height: 631px;
+    box-sizing: border-box;
+    box-shadow: 10px 0 10px rgb(245, 245, 245);
+    padding: 110px 0 100px 90px;
+}
+
+.left p {
+    font-size: 17px;
+    color: #474747;
+    line-height: 1.9;
+    margin-bottom: 50px;
+    letter-spacing: -0.6px;
+}
+
+.left b {
+    color: #67b224;
+}
+
+.left img {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right .box{
+    width: 353px;
+    height: 76px;
+    background-color: #fff;
+    box-shadow: 0 0 18px rgb(233, 233, 233);
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 19px;
+    transition: all 0.3s;
+
+}
+
+.box b{
+    color: #1c9dd3;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.box span{
+    color: #8b8b8b;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.box:hover{
+    color: #fff;
+    background-color: #d5f2ff;
+}
+
+/* 더데이팜끝 */
+
+/* 푸터 */
+.foot_top {
+    background-color: #fbfbfb;
+    padding: 60px 0;
+}
+
+.foot_top h2 {
+    font-size: 24px;
+    color: #474646;
+    text-align: center;
+    font-weight: 600;
+}
+
+.foot_top .icon {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 0 0;
+}
+
+.foot_top .icon img {
+    opacity: 0.7;
+}
+
+.foot_top .icon img:hover {
+    opacity: 1;
+}
+
+.foot_top li {
+    margin-right: 20px;
+}
+
+.last {
+    margin: 0;
+}
+
+.foot_bottom {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgb(238, 238, 238);
+}
+
+.foot_bottom_in {
+    width: 1440px;
+    margin: auto;
+    display: -moz-stack;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: relative;
+    align-items: center;
+}
+
+.foot_bottom_in .btn {
+    background-color: #9fea3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #e7e7e7;
+    transition: all 0.3s;
+}
+
+.btn a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 170px;
+    display: inline-block;
+}
+
+.foot_bottom_in p {
+    font-size: 20px;
+    color: #aeaeae;
+}
+
+.foot_bottom_in .btn:hover {
+    box-shadow: 0 0 15px #c4c4c4;
+}
+
+
+
+
+
+/* 푸터끝 */

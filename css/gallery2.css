@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.gallery2 {
+	width: 1440px;
+	height: 455px;
+	margin: 0 auto 40px;
+	/* padding: 50px 0; */
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery_inner2 {
+	width: 94%;
+	height: 500px;
+	overflow: hidden;
+	margin: 30px 0;
+	/* padding: 20px; */
+	box-sizing: border-box;
+}
+
+.gallery2 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+/* .gallery2 .swiper-slide img {
+	display: block;
+	width: 100%;
+} */
+
+.gallery2 .swiper-slide{
+	height: 458px;
+}
+
+
+
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery2 .swiper-button-next{
+	width: 54px;
+	height: 54px;
+}
+.gallery2 .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 54px;
+	height: 54px;
+}
+
+.gallery2 .swiper-button-next:after{
+	background: url(../images/next_btn.png);
+}

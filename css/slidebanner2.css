@@ -1,0 +1,27 @@
+*{margin:0; padding:0;}
+
+/* 슬라이드배너 꾸미기 */
+.slide2 { 
+	width:1282px;
+	height: 63px;
+	position: relative;
+	overflow: hidden;
+}
+.slide2 .swiper-slide {
+	text-align: center; 
+	font-size: 18px; 
+	background: #f6f6f6;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide2 .swiper-slide a{
+	width: 100%;
+	display: block;
+}
+.slide2 .swiper-slide a img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
