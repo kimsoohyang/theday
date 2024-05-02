@@ -1,5 +1,6 @@
- $(function(){
- var swiper = new Swiper('.gallery_inner ', {
+ 
+ var swiper2 = new Swiper('.gallery_inner ', {
+  //$('.gallery_inner').fullpage({
     slidesPerView: 3,//보여지는 갤러리 수
     spaceBetween: 30,//갤러리 사이 간격
     speed: 4000,//버튼을 슬라이드가 넘어가는 시간
@@ -17,4 +18,3 @@
         clickable: true,
       },
     });
-});
